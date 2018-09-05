@@ -1,0 +1,31 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.5
+    ports:
+      - 3306:3306
+    network_mode: host
+    environment:
+      MYSQL_HOST: localhost
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: foodie_db
+      MYSQL_USER: app_root
+      MYSQL_PASSWORD: root123
+  restaurant-service:
+    image: restaurant-service
+    build: Server/
+    restart: always
+    network_mode: host
+    depends_on:
+      - mysql
+    ports:
+      - 8081:8081
+    expose:
+      - 8081
+  restaurantclient:
+    image: restaurant-client
+    build: ./
+    network_mode: host
+    container_name: angular-docker
+    ports:
+      - 4200:4200

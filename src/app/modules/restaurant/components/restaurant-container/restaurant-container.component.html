@@ -1,0 +1,5 @@
+<div class="restaurant-container" >
+  <restaurant-card *ngFor="let restaurant of restaurants" [restaurant]="restaurant" (addFavourite)="addToFavourites($event)"
+  (removeFavourite)="deleteFromFavourites($event)" (updateFavourite)="updateToFavourites($event)">
+  </restaurant-card>
+</div>

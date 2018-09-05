@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="8" time="8.334">
+ <testsuite name="Foodie App" timestamp="2018-08-31T06:02:37" hostname="localhost" time="8.334" errors="0" tests="8" skipped="0" disabled="0" failures="0">
+  <testcase classname="Foodie App" name="should display title" time="3.042" />
+  <testcase classname="Foodie App" name="should be redirected to home(/) page upon launching the application" time="0.014" />
+  <testcase classname="Foodie App" name="Home page should contain 20 cards" time="0.027" />
+  <testcase classname="Foodie App" name="should be redirected to /search page upon clicking the search button" time="0.126" />
+  <testcase classname="Foodie App" name="should be able to search restaurants in search page" time="1.558" />
+  <testcase classname="Foodie App" name="should be able to add restaurant to favourites" time="1.276" />
+  <testcase classname="Foodie App" name="should be redirected to /favourites page upon clicking the Favourites button" time="1.185" />
+  <testcase classname="Foodie App" name="should be redirected to /restaurant-detail page upon clicking the restaurant card title" time="1.104" />
+ </testsuite>
+</testsuites>

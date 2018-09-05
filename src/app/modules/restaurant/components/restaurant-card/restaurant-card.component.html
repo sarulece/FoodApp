@@ -1,0 +1,40 @@
+<div>
+  <mat-card class="restaurant-card" >
+    <mat-card-header class="restaurant-header">
+      <div mat-card-avatar [style.background-image]="restaurant?.thumbUrl"></div>
+      <mat-card-title (click)="displayRestaurantDetail()" class="restaurant-name">{{restaurant?.name}}</mat-card-title>
+      <!-- <mat-card-subtitle>{{restaurant?.city}}</mat-card-subtitle> -->
+      <mat-card-subtitle class="restaurant-address">{{restaurant?.city}}</mat-card-subtitle>
+      <div style="float:right;">
+        <div class="restaurant-rating">{{restaurant?.aggregate_rating}}</div>
+        <div class="restaurant-vote">{{restaurant?.votes}} votes</div>
+      </div>
+      <div style="clear:right"></div>
+    </mat-card-header>
+    <hr/>
+    <img mat-card-image (click)="displayRestaurantDetail()" class="restaurant-image" [src]="restaurant?.thumb" [alt]="restaurant?.name">
+    <mat-card-content class="restaurant-content">
+      <table>
+        <tr class="card-content-row">               
+          <td class="row-lable" >Cuisines:</td>
+          <td class="restaurant-description, row-data">{{restaurant?.cuisines}}</td>                
+        </tr>
+        <tr class="card-content-row">          
+          <td class="row-lable">Cost For Two:</td>
+          <td class="restaurant-COT, row-data">
+            {{restaurant?.currency}}{{restaurant?.average_cost_for_two}}
+          </td>
+        </tr>
+        <tr class="card-content-row">               
+          <td class="row-lable" >Address:</td>
+          <td class="restaurant-description, row-data">{{restaurant?.address}}</td>                
+        </tr>
+      </table>               
+    </mat-card-content>
+    <mat-card-actions class="restaurant-actions">
+       <button [ngClass]="buttonClasses" mat-raised-button color="primary" (click)="addRemoveFavourite()">{{buttonText}}</button> 
+    </mat-card-actions>
+  </mat-card>
+</div>
+      
+

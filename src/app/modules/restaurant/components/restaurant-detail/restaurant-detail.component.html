@@ -1,0 +1,40 @@
+<div class="restaurant-detail">
+  <img (src)="restaurantData?.thumb" style="width: 400px">
+  <h1>{{restaurantData?.name}}</h1>
+  <h3>{{restaurantData?.city}}</h3>
+  <hr>
+  <table>
+    <tr>
+      <td class="data-label">Address:</td>
+      <td class="data-text">{{restaurantData?.address}}</td>
+    </tr>
+    <tr>
+      <td class="data-label">Cuisines:</td>
+      <td class="data-text">{{restaurantData?.cuisines}}</td>
+    </tr>
+    <tr>
+      <td class="data-label">Cost For Two:</td>
+      <td class="data-text">{{restaurantData?.currency}}{{restaurantData?.average_cost_for_two}}</td>
+    </tr>
+    <tr>
+      <td class="data-label">User Rating:</td>
+      <td class="data-text">{{restaurantData?.aggregate_rating}}</td>
+    </tr>
+    <tr>
+      <td class="data-label">Votes:</td>
+      <td class="data-text">{{restaurantData?.votes}}</td>
+    </tr>
+    <tr *ngIf="restaurantData?.favourite">
+      <td class="data-label">Comments:</td>
+      <td class="data-text">{{restaurantData?.comments}}</td>
+    </tr>
+    <tr *ngIf="restaurantData?.favourite">
+      <td class="data-label">Add/Update Comments: </td>
+      <td class="data-text"><input class="addcomments" [(ngModel)]="restaurantData.comments"></td>
+    </tr>
+    <tr *ngIf="restaurantData?.favourite">
+      <td class="data-label"></td>
+      <td class="data-text"><button mat-raised-button class="comment" (click)="updateToFavourites()">Update Comments</button></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 0.0.0 (Linux 0.0.0)" package="" timestamp="2018-08-25T11:52:46" id="0" hostname="ip-172-31-44-84" tests="7" errors="0" failures="0" time="0.59">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/68.0.3440.84 Safari/537.36"/>
+  </properties>
+  <testcase name="RestaurantService should be created" time="0.239" classname="RestaurantService"/>
+  <testcase name="RestaurantService should add restaurant to favourites" time="0.066" classname="RestaurantService"/>
+  <testcase name="RestaurantService should update favourite restaurant" time="0.085" classname="RestaurantService"/>
+  <testcase name="RestaurantService should delete restaurant from favourites" time="0.038" classname="RestaurantService"/>
+  <testcase name="RestaurantService should fetch favourite restaurants" time="0.039" classname="RestaurantService"/>
+  <testcase name="RestaurantService should fetch default restaurants" time="0.103" classname="RestaurantService"/>
+  <testcase name="RestaurantService should fetch restaurants by location and cuisine" time="0.02" classname="RestaurantService"/>
+  <system-out>
+    <![CDATA[HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Service - Add Favourite: [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Service - Update Favourite: [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Service - Remove Favourite: [object Object]'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

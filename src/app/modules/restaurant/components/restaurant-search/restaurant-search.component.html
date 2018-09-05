@@ -1,0 +1,22 @@
+<div class="restaurant-search-form">
+  <form (ngsubmit)="searchRestaurants()">
+      <table>
+        <tr>
+          <td>
+            <mat-form-field class="search-input-full-width">
+              <input matInput id="location" placeholder="Location" [(ngModel)]="location" name="location">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="search-input-full-width">
+              <input matInput id="cuisine" placeholder="Cuisine" [(ngModel)]="cuisine" name="cuisine" >
+            </mat-form-field>
+          </td>
+          <td>
+            <button mat-raised-button color="primary" class="search-input-full-width" id="search-button" type="submit" (click)="searchRestaurants()">Search</button>
+          </td>
+        </tr>
+      </table>
+  </form>
+</div>
+<restaurant-container [restaurants]="restaurants"></restaurant-container>

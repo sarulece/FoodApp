@@ -1,0 +1,30 @@
+.restaurant-detail{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+tr{
+    font-family: Courier New, Courier, monospace;
+    padding: 10px;
+    Color: #000;
+    font-size: 1.5em;
+}
+.data-label{
+    width: 200px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.data-text{
+    text-align: left;
+}
+.addcomments{
+    width: 300px;
+    font-size: 1.2em;
+}
+
+.comment{
+    font-size: 1.2em;
+}

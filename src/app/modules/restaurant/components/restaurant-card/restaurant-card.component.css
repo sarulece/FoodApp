@@ -1,0 +1,74 @@
+.restaurant-card{
+    width: 350px;
+    margin: 15px;
+    /* height: 600px; */
+}
+.restaurant-header{
+    height: 80px;
+}
+.restaurant-content{
+    text-align: justify;
+    height: 130px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.restaurant-content::-webkit-scrollbar
+{
+    width: 3px;
+    background: gray;
+}
+.restaurant-image{
+    width: 340px;
+    height: 150px;
+    cursor: pointer;
+}
+.restaurant-actions{
+    text-align: right;
+    margin-right: 5px;
+}
+.restaurant-rating{
+    width: 25px; 
+    background-color: skyblue;
+    margin-left: auto;   
+    font-size: 0.8 em;
+}
+.restaurant-vote{
+    width: 80px; 
+    margin-left: auto;
+    text-align: right; 
+    font-size: 0.8 em;
+}
+
+.mat-card-title{
+    font-family: Courier New, Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(203,32,45);
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.mat-card-title:hover{
+    color: rgb(26, 167, 38); 
+}
+
+.card-content-row{
+    font-family: Courier New, Courier, monospace;
+    padding: 10px;
+    Color: #000;
+    font-size: 0.8em;
+}
+
+.row-lable{
+    width: 110px;
+    padding-right: 20px;
+    padding-bottom: 5px;   
+}
+
+.favourite{
+    max-width: 200px;
+    /*font-size: 1.2em;*/
+}
+.remove{
+    max-width: 200px;
+    /*font-size: 1.2em;*/
+}

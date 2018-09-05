@@ -1,0 +1,15 @@
+.restaurant-search-form{
+    min-width:150px;
+    max-width: 600px;
+    width: 50%;
+    margin: auto;
+}
+.search-input-full-width{
+    width: 250px;
+    margin: 10px;
+}
+#search-button{
+    width: 100px;
+    font-size: 1.5em;
+}
+
